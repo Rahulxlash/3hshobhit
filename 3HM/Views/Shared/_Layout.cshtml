@@ -1,44 +1,249 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- start: Meta -->
+    <meta charset="utf-8">
+    <title>3HM</title>
+    <meta name="description" content="3HM pest control company" />
+    <meta name="keywords" content="3HM, Pest Control, Lucknow, PestControl" />
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- end: Mobile Specific -->
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- end: Facebook Open Graph -->
+    <!-- start: CSS -->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+    <!-- end: CSS -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <!--start: Header -->
+    <header>
+
+        <!--start: Container -->
+        <div class="container" style="width:1100px;">
+
+            <!--start: Row -->
+            <div class="row">
+
+                <!--start: Logo -->
+                <div class="logo span3">
+                    <a class="brand" href="/Home"><img src="~/img/3HMlogo.png" style="height:50px;" alt="Logo"></a>
+                </div>
+                <!--end: Logo -->
+                <!--start: Navigation -->
+                <div class="span9">
+
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-inner">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav">
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Index" ? "active":"" )">@Html.ActionLink("Home", "Index", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() =="About" ? "active":"" ) ">@Html.ActionLink("About Us", "About", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Services" ? "active":"" )">@Html.ActionLink("Services", "Services", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Products" ? "active":"" )">@Html.ActionLink("Products", "Products", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString()=="ClientsPartners" ? "active":"" )">@Html.ActionLink("Clients & Partners", "ClientsPartners", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Business" ? "active" : "")">@Html.ActionLink("Business Opportunities", "Business", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active" : "") ">@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                                    @*<li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li class="nav-header">Nav header</li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>*@
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end: Navigation -->
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+            <!--end: Row -->
+
         </div>
-    </div>
-    <div class="container body-content">
+        <!--end: Container-->
+
+    </header>
+    <!--end: Header-->
+  
+    <div id="wrapper">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <div id="footer-menu" class="hidden-tablet hidden-phone">
+        <!-- start: Container -->
+        <div class="container">
+
+            <!-- start: Row -->
+            <div class="row">
+                <!-- start: Footer Menu Logo -->
+                <div class="span2">
+                    <div id="footer-menu-logo">
+                        <a href="#"><img src="~/img/3HMLogo.png" style="height:35px;" alt="logo" /></a>
+                    </div>
+                </div>
+                <!-- end: Footer Menu Logo -->
+                <!-- start: Footer Menu Links-->
+                <div class="span9" style="width:700px;">
+
+                    <div id="footer-menu-links">
+                        <ul id="footer-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</a></li>
+                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li>@Html.ActionLink("Proucts", "Products", "Home")</li>
+
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- end: Footer Menu Links-->
+                <!-- start: Footer Menu Back To Top -->
+                <div class="span1">
+
+                    <div id="footer-menu-back-to-top">
+                        <a href="#"></a>
+                    </div>
+
+                </div>
+                <!-- end: Footer Menu Back To Top -->
+
+            </div>
+            <!-- end: Row -->
+
+        </div>
+        <!-- end: Container  -->
+    </div>
+    <!-- end: Footer Menu -->
+    <!-- start: Footer -->
+    <div id="footer">
+
+        <!-- start: Container -->
+        <div class="container">
+
+            <!-- start: Row -->
+            <div class="row">
+                <!-- start: About -->
+                <div class="span4">
+
+                    <h3>About Us</h3>
+                    <p>
+                        3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
+                    </p>
+
+                </div>
+                <!-- end: About -->
+                <!-- start: Photo Stream -->
+                <div class="span4">
+
+                    <h3>We are here!</h3>
+                    <div id="small-map-container"><a href="contact.html"></a></div>
+                    <iframe id="small-map" width="210" height="210" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;aq=0&amp;oq=Los&amp;sll=50.143066,18.85267&amp;sspn=0.057207,0.168915&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;ll=34.052234,-118.243685&amp;spn=0.036979,0.084457&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+
+                </div>
+                <!-- end: Photo Stream -->
+                <div class="span4">
+
+                    <!-- start: Follow Us -->
+                    <h3>Follow Us!</h3>
+                    <ul class="social-grid">
+                        <li>
+                            <div class="social-item">
+                                <div class="social-info-wrap">
+                                    <div class="social-info">
+                                        <div class="social-info-front social-twitter">
+                                            <a href="http://twitter.com"></a>
+                                        </div>
+                                        <div class="social-info-back social-twitter-hover">
+                                            <a href="http://twitter.com"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="social-item">
+                                <div class="social-info-wrap">
+                                    <div class="social-info">
+                                        <div class="social-info-front social-facebook">
+                                            <a href="http://facebook.com"></a>
+                                        </div>
+                                        <div class="social-info-back social-facebook-hover">
+                                            <a href="http://facebook.com"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end: Follow Us -->
+                    <!-- start: Newsletter -->
+                    @*<form id="newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Please leave us your email</p>
+                        <label for="newsletter_input">:</label>
+                        <input type="text" id="newsletter_input" />
+                        <input type="submit" id="newsletter_submit" value="submit">
+                    </form>*@
+                    <!-- end: Newsletter -->
+
+                </div>
+
+            </div>
+            <!-- end: Row -->
+
+        </div>
+        <!-- end: Container  -->
+    </div>
+    <!-- end: Footer -->
+    <!-- start: Copyright -->
+    <div id="copyright">
+
+        <!-- start: Container -->
+        <div class="container">
+
+            <p>
+                &copy; 2017, 3HM. designed by Flytech
+            </p>
+
+        </div>
+        <!-- end: Container  -->
+
+    </div>
+    <!-- end: Copyright -->
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>

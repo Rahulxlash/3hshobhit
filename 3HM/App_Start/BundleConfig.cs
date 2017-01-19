@@ -9,7 +9,9 @@ namespace _3HM
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js"
+
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -21,11 +23,26 @@ namespace _3HM
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                       "~/Scripts/carousel.js",
+                        "~/Scripts/custom.js",
+                        "~/Scripts/jquery.gmap.min.js",
+                        "~/Scripts/flexslider.js",
+                        "~/Scripts/jquery.cslider.js",
+                        "~/Scripts/slider.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/bootstrap-responsive.css",
+                       "~/Content/site.css",
+                      "~/Content/hover.css",
+                      "~/Content/icons",
+                      "~/Content/icons-color.css",
+                      "~/Content/Social-icons.css",
+                      "~/Content/parallax-slider.css"
+                     
+                      
+                      ));
         }
     }
 }
