@@ -42,8 +42,12 @@
             <div class="row">
 
                 <!--start: Logo -->
-                <div class="logo span3">
-                    <a class="brand" href="/Home"><img src="~/img/3HMlogo.png" style="height:50px;" alt="Logo"></a>
+                <div class="logo span3" style="font-size:.9em;font-weight:600;width:190px;margin-left:0px;">
+                    <a class="brand" href="/Home">
+                        <img src="~/img/3HMlogo.png" style="height:40px;" alt="Logo">
+                    </a>
+                    <br />
+                    Health Hygine Herbal Management
                 </div>
                 <!--end: Logo -->
                 <!--start: Navigation -->
@@ -62,21 +66,21 @@
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() =="About" ? "active":"" ) ">@Html.ActionLink("About Us", "About", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Services" ? "active":"" )">@Html.ActionLink("Services", "Services", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Products" ? "active":"" )">@Html.ActionLink("Products", "Products", "Home")</li>
-                                    <li class="@(ViewContext.RouteData.Values["action"].ToString()=="ClientsPartners" ? "active":"" )">@Html.ActionLink("Clients & Partners", "ClientsPartners", "Home")</li>
+                                    <li class="@(ViewContext.RouteData.Values["action"].ToString()=="ClientsPartners" ? "active":"" )">@Html.ActionLink("Clients", "ClientsPartners", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Business" ? "active" : "")">@Html.ActionLink("Business Opportunities", "Business", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active" : "") ">@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                                     @*<li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li class="nav-header">Nav header</li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li><a href="#">One more separated link</a></li>
-                                        </ul>
-                                    </li>*@
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li class="nav-header">Nav header</li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>*@
                                 </ul>
                             </div>
                         </div>
@@ -93,7 +97,7 @@
 
     </header>
     <!--end: Header-->
-  
+
     <div id="wrapper">
         @RenderBody()
     </div>
@@ -153,21 +157,21 @@
             <!-- start: Row -->
             <div class="row">
                 <!-- start: About -->
-                <div class="span4">
-
-                    <h3>About Us</h3>
-                    <p>
-                        3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
-                    </p>
+                <div class="span6">
+                    <h3>Customer Care: +91 72 77 123456</h3>
+                    @*<h3>About Us</h3>
+                        <p>
+                            3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
+                        </p>*@
 
                 </div>
                 <!-- end: About -->
                 <!-- start: Photo Stream -->
-                <div class="span4">
+                <div class="span2">
 
-                    <h3>We are here!</h3>
-                    <div id="small-map-container"><a href="contact.html"></a></div>
-                    <iframe id="small-map" width="210" height="210" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;aq=0&amp;oq=Los&amp;sll=50.143066,18.85267&amp;sspn=0.057207,0.168915&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;ll=34.052234,-118.243685&amp;spn=0.036979,0.084457&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+                    @*<h3>We are here!</h3>
+                        <div id="small-map-container"><a href="contact.html"></a></div>
+                        <iframe id="small-map" width="210" height="210" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;aq=0&amp;oq=Los&amp;sll=50.143066,18.85267&amp;sspn=0.057207,0.168915&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;ll=34.052234,-118.243685&amp;spn=0.036979,0.084457&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>*@
 
                 </div>
                 <!-- end: Photo Stream -->
@@ -208,12 +212,12 @@
                     <!-- end: Follow Us -->
                     <!-- start: Newsletter -->
                     @*<form id="newsletter">
-                        <h3>Newsletter</h3>
-                        <p>Please leave us your email</p>
-                        <label for="newsletter_input">:</label>
-                        <input type="text" id="newsletter_input" />
-                        <input type="submit" id="newsletter_submit" value="submit">
-                    </form>*@
+                            <h3>Newsletter</h3>
+                            <p>Please leave us your email</p>
+                            <label for="newsletter_input">:</label>
+                            <input type="text" id="newsletter_input" />
+                            <input type="submit" id="newsletter_submit" value="submit">
+                        </form>*@
                     <!-- end: Newsletter -->
 
                 </div>
@@ -240,10 +244,8 @@
 
     </div>
     <!-- end: Copyright -->
-
-
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -193,6 +193,14 @@
     <Content Include="img\bg-k10.png" />
     <Content Include="img\bg-k20.png" />
     <Content Include="img\bg-repeat.jpg" />
+    <Content Include="img\clients\beml.jpg" />
+    <Content Include="img\clients\biobee.png" />
+    <Content Include="img\clients\hal.jpg" />
+    <Content Include="img\clients\infosys.png" />
+    <Content Include="img\clients\leela.jpg" />
+    <Content Include="img\clients\mes.jpg" />
+    <Content Include="img\clients\oberoi.png" />
+    <Content Include="img\clients\wipro.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\icons\eject.png" />
