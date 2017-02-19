@@ -193,6 +193,7 @@
     <Content Include="img\bg-k10.png" />
     <Content Include="img\bg-k20.png" />
     <Content Include="img\bg-repeat.jpg" />
+    <Content Include="img\bg_grid.gif" />
     <Content Include="img\clients\beml.jpg" />
     <Content Include="img\clients\biobee.png" />
     <Content Include="img\clients\hal.jpg" />
@@ -201,8 +202,11 @@
     <Content Include="img\clients\mes.jpg" />
     <Content Include="img\clients\oberoi.png" />
     <Content Include="img\clients\wipro.jpg" />
+    <Content Include="img\ecofrndly.png" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\handshake-329_0.jpg" />
+    <Content Include="img\hrbl.png" />
     <Content Include="img\icons\eject.png" />
     <Content Include="img\icons\glyphicons-mini-white.png" />
     <Content Include="img\icons\glyphicons-mini.png" />
@@ -394,10 +398,13 @@
     <Content Include="img\parallax-slider\twitter.png" />
     <Content Include="img\poland.png" />
     <Content Include="img\poland2.png" />
+    <Content Include="img\safentxc.png" />
     <Content Include="img\scroll-top-top.png" />
+    <Content Include="img\sgs.png" />
     <Content Include="img\slider-control-left.png" />
     <Content Include="img\slider-control-right.png" />
     <Content Include="img\slider.jpg" />
+    <Content Include="img\slider2.jpg" />
     <Content Include="img\slider\desert.jpg" />
     <Content Include="img\slider\mobile_app1.jpg" />
     <Content Include="img\slider\slider1.jpg" />
@@ -414,6 +421,9 @@
     <Content Include="Content\fonts\BebasNeue-webfont.eot" />
     <Content Include="Content\fonts\BebasNeue-webfont.ttf" />
     <Content Include="Content\fonts\BebasNeue-webfont.woff" />
+    <Content Include="Content\3HM -Product Info - Bugsac D9.pptx" />
+    <Content Include="Content\3HM -Product Info - Mealisac.pptx" />
+    <Content Include="Content\3HM -Product Info - Pynodor 4.pptx" />
     <None Include="Properties\PublishProfiles\3hm - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\3hm - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

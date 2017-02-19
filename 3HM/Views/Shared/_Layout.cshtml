@@ -31,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body >
     <!--start: Header -->
     <header>
 
@@ -44,10 +44,11 @@
                 <!--start: Logo -->
                 <div class="logo span3" style="font-size:.9em;font-weight:600;width:190px;margin-left:0px;">
                     <a class="brand" href="/Home">
-                        <img src="~/img/3HMlogo.png" style="height:40px;" alt="Logo">
+                        <img src="~/img/3HMlogo.png" style="height:66px;margin:0px;" alt="Logo">
                     </a>
-                    <br />
-                    Health Hygine Herbal Management
+                    <p style="float:right; line-height: 14px; margin-top: 5px;">
+                        Health<br /> Hygine <br />Herbal <br />Management
+                    </p>
                 </div>
                 <!--end: Logo -->
                 <!--start: Navigation -->
@@ -118,7 +119,7 @@
                 <!-- start: Footer Menu Links-->
                 <div class="span9" style="width:700px;">
 
-                    <div id="footer-menu-links">
+                    @*<div id="footer-menu-links">
                         <ul id="footer-nav">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             <li>@Html.ActionLink("About", "About", "Home")</a></li>
@@ -127,7 +128,7 @@
 
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         </ul>
-                    </div>
+                    </div>*@
 
                 </div>
                 <!-- end: Footer Menu Links-->
@@ -159,10 +160,17 @@
                 <!-- start: About -->
                 <div class="span6">
                     <h3>Customer Care: +91 72 77 123456</h3>
-                    @*<h3>About Us</h3>
+                    @{if (ViewContext.RouteData.Values["action"].ToString() == "Services"
+                          || ViewContext.RouteData.Values["action"].ToString() == "Products")
+                      {
                         <p>
-                            3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
-                        </p>*@
+
+                            <img style="height:50px;" src="~/img/ecofrndly.png" />
+                            <img style="height:50px;" src="~/img/hrbl.png" />
+                            <img style="height:50px;" src="~/img/safentxc.png" />
+                            <img style="height:50px;" src="~/img/sgs.png" />
+
+                        </p>}}
 
                 </div>
                 <!-- end: About -->

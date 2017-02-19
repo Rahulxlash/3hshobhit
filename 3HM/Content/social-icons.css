@@ -441,15 +441,15 @@
 }
 
 .social-grid li a{
-	width: 72px;
-	height: 72px;
+	width: 35px;
+	height: 35px;
 	display:block;
 }
 
 
 .social-item {
-	width: 72px;
-	height: 72px;
+	width: 35px;
+	height: 35px;
 	-webkit-border-radius: 50em;
 	-moz-border-radius: 50em;
 	border-radius: 50em;
@@ -460,8 +460,8 @@
 
 .social-info-wrap{
 	position: absolute;
-	width: 72px;
-	height: 72px;
+	width: 35px;
+	height: 35px;
 	-webkit-border-radius: 50em;
 	-moz-border-radius: 50em;
 	border-radius: 50em;
@@ -486,8 +486,8 @@
 
 .social-info{
 	position: absolute;
-	width: 70px;
-	height: 70px;	
+	width: 35px;
+	height: 35px;	
 	-webkit-border-radius: 50em;
 	-moz-border-radius: 50em;
 	border-radius: 50em;
