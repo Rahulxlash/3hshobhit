@@ -1,68 +1,83 @@
-﻿  <!-- start: Slider -->
-<div class="slider-wrapper">
-    <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-            <h2>100% Organic</h2>
-            <p>3HM conducts effective pest control and fumigation using 100% organic, non-toxic pest control agents. Our organic compounds are herbs and leaves extracts and has no chemicals.</p>
-            @Html.ActionLink("Read more", "Services", "Home", null, new { @class = "da-link" })
-            <div class="da-img"><img src="~/img/parallax-slider/green1.png" alt="image01" style="height:350px;" /></div>
-        </div>
-        <div class="da-slide">
-            <h2>Healthy</h2>
-            <p>Our commitment to your health is front and centre in all aspects of our pest control practice. Our dedication to the mission is solid. Our service technicians are more than exterminators, and our results are always guaranteed.</p>
-            @Html.ActionLink("Read more", "Services", "Home", null, new { @class = "da-link" })
-            <div class="da-img"><img src="~/img/parallax-slider/healthy.png" alt="image02" /></div>
-        </div>
-        <div class="da-slide">
-            <h2>Exterminator</h2>
-            <p>We use the safest products and techniques performed by licensed technicians who have elevated the word &quot;exterminator&quot; by undergoing continuous training and licensing and demonstrating a commitment to the environment.</p>
-            @Html.ActionLink("Read more", "Services", "Home", null, new { @class = "da-link" })
-            <div class="da-img"><img src="~/img/parallax-slider/roach1.png" alt="image03" /></div>
-        </div>
-        <nav class="da-arrows">
-            <span class="da-arrows-prev"></span>
-            <span class="da-arrows-next"></span>
-        </nav>
-    </div>
-
-</div>
-
-<!--start: Wrapper-->
+﻿<!--start: Wrapper-->
 <div id="wrapper">
 
     <!--start: Container -->
     <div class="container">
+        <div class="row" style="margin-top:20px;">
+            <div class="span8 clients-carousel">
+                <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                    <ul class="slides clients" style="width: 2000%; transition-duration: 0.6s; transform: translate3d(-188px, 0px, 0px);">
+                        <li style="width: 147px; height:250px; float: left; display: block;padding:5px;">
+                            <img src="img/logos/1.png" alt="">
+                            <div style="color:#f00;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin:5px;">Bugsac-D9 </div>
+                            <div style="color:#686868;font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:5px;">It is a thin leafy green liquid and used for intense pest infested areas e.g. drains, ponds, waste area, common use toilets in hospitals, gattors etc. In hospitals it is used to disinfect ICU, CCU, OT and other infection prone areas.</div>
+                        </li>
+                        <li style="width: 147px; height:300px; float: left; display: block;">
+                            <img src="img/logos/1.png" alt="">
+                            <div style="color:#f00;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin:5px;">Pynodor 4 </div>
+                            <div style="color:#686868;font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:5px;">It a cloudy white solution and is used for regular pest control by mopping (diluted in various proportions) and spraying. It has a local effect on the area and repells mosquitoes, flies, ants, spiders and other pests.</div>
 
-        <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
-        <div class="hero-unit" style="font-style:normal;">
-            <p>
-                3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
-            </p>
-            <p>@Html.ActionLink("Learn more >>>", "Services", "Home", null, new { @class = "btn btn-success btn-large" })</p>
-        </div>
-        <!-- end:  Hero Unit -->
-        <hr />
-        <div class="clients-carousel">
+                        </li>
+                        <li style="width: 147px; height:300px; float: left; display: block;">
+                            <img src="img/logos/1.png" alt="">
+                            <div style="color:#f00;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin:5px;">Mealisac </div>
+                            <div style="color:#686868;font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:5px;">It is a biege coloured thick liquid used to spray in horticulture, agriculture, poultry farms, gardens and various other farms. It is a boon for organic farming as apart from eradicating plant pests, it also maintains the organic nature of the farm. </div>
 
-
-
-            <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                <ul class="slides clients" style="width: 2000%; transition-duration: 0.6s; transform: translate3d(-188px, 0px, 0px);">
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/1.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/2.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/3.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/4.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/5.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/6.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/7.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/8.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/9.png" alt=""></li>
-                    <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/10.png" alt=""></li>
-                </ul>
+                        </li>
+                        <li style="width: 147px; height:300px; float: left; display: block;">
+                            <img src="img/logos/1.png" alt="">
+                            <div style="color:#f00;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin:5px;">ATCT</div>
+                            <div style="color:#686868;font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:5px;">It is a herbal nontoxic foundation and flooring treatment agent. A ready to use herbal solution for termite which eradicates and checks termite at the foundation and construction level/stage for any structure e.g. apartment buildings, official buildings etc. </div>
+                        </li>
+                        <li style="width: 147px; height:300px; float: left; display: block;">
+                            <img src="img/logos/1.png" alt="">
+                            <div style="color:#f00;font-size:14px;font-family:Arial, Helvetica, sans-serif;margin:5px;">ATWT</div>
+                            <div style="color:#686868;font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:5px;">Is a ready to use, herbal termite control application used to eradicate and prevent termite and wood borer infestation in all wooden furniture and fixtures including interior paneling and their frames. </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span3" style="width: 250px; font-size: 16px;">
+                <p>
+                    3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
+                </p>
+                <div style="width: 250px;color: #f00;height: 30px;background-color: beige;padding: 10px;">
+                    <a href="Home/Products" style="text-decoration:none;">
+                        Download Product Details...<img src="img/book.png" style="height:28px;"/>
+                    </a>
+                </div>
             </div>
         </div>
+        <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
+        @*<div class="hero-unit" style="font-style:normal;">
+                <p>
+                    3HM is a non-toxic and organic pest control solution provider; we&#39;ve redefined the term &quot;exterminator&quot; by advancing pest management services (including termite control, ant control, rodent control, roach extermination, and much more) while maintaining an earnest concern for the environment and the safety of our customers and employees.
+                </p>
+                <p>@Html.ActionLink("Learn more >>>", "Services", "Home", null, new { @class = "btn btn-success btn-large" })</p>
+            </div>*@
+        <!-- end:  Hero Unit -->
+        <hr />
+        @*<div class="clients-carousel">
 
-       
+
+
+                <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                    <ul class="slides clients" style="width: 2000%; transition-duration: 0.6s; transform: translate3d(-188px, 0px, 0px);">
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/1.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/2.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/3.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/4.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/5.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/6.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/7.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/8.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/9.png" alt=""></li>
+                        <li style="width: 147px; height:90px; float: left; display: block;"><img src="img/logos/10.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>*@
+
+
         <hr>
         <!-- start: Row -->
         <div class="row">

@@ -15,7 +15,7 @@
     <AssemblyName>3HM</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -186,6 +186,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\3HMLogo.png" />
     <Content Include="img\arrows.png" />
+    <Content Include="img\banner-left-1.jpg" />
     <Content Include="img\bg-grey.png" />
     <Content Include="img\bg-grey2.png" />
     <Content Include="img\bg-grey3.png" />
@@ -194,6 +195,8 @@
     <Content Include="img\bg-k20.png" />
     <Content Include="img\bg-repeat.jpg" />
     <Content Include="img\bg_grid.gif" />
+    <Content Include="img\body-gradient.png" />
+    <Content Include="img\book.png" />
     <Content Include="img\clients\beml.jpg" />
     <Content Include="img\clients\biobee.png" />
     <Content Include="img\clients\hal.jpg" />
@@ -202,10 +205,15 @@
     <Content Include="img\clients\mes.jpg" />
     <Content Include="img\clients\oberoi.png" />
     <Content Include="img\clients\wipro.jpg" />
+    <Content Include="img\divider-gray.png" />
     <Content Include="img\ecofrndly.png" />
+    <Content Include="img\header.png" />
+    <Content Include="img\homepage_bg3.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\handshake-329_0.jpg" />
+    <Content Include="img\homepage_bg.jpg" />
+    <Content Include="img\homepage_bg2.jpg" />
     <Content Include="img\hrbl.png" />
     <Content Include="img\icons\eject.png" />
     <Content Include="img\icons\glyphicons-mini-white.png" />
@@ -373,6 +381,7 @@
     <Content Include="img\icons\social_small\vimeo_white.png" />
     <Content Include="img\icons\social_small\youtube_grey.png" />
     <Content Include="img\icons\social_small\youtube_white.png" />
+    <Content Include="img\ganesha_dr.jpg" />
     <Content Include="img\logo-footer-menu.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\logos\1.png" />
@@ -385,6 +394,8 @@
     <Content Include="img\logos\7.png" />
     <Content Include="img\logos\8.png" />
     <Content Include="img\logos\9.png" />
+    <Content Include="img\nav-active-left-alt.png" />
+    <Content Include="img\nav-active-left.png" />
     <Content Include="img\parallax-slider\1.png" />
     <Content Include="img\parallax-slider\2.png" />
     <Content Include="img\parallax-slider\3.png" />
@@ -398,6 +409,7 @@
     <Content Include="img\parallax-slider\twitter.png" />
     <Content Include="img\poland.png" />
     <Content Include="img\poland2.png" />
+    <Content Include="img\red-action-bar-responsive.png" />
     <Content Include="img\safentxc.png" />
     <Content Include="img\scroll-top-top.png" />
     <Content Include="img\sgs.png" />
@@ -513,7 +525,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58234</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58234/</IISUrl>
+          <IISUrl>http://localhost/3HM</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

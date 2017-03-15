@@ -11,11 +11,11 @@
 
 .da-slider{
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
-	background: transparent url(../img/slider.jpg) repeat 0% 0%;
+	background:transparent;
 	border-bottom: 5px solid #f6f6f6 !important;
 	-webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,.25);
 	-moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,.25);
@@ -29,12 +29,12 @@
 
 .da-slide{
 	position: absolute;
-	width: 960px;
+	width: 100%;
 	height: 100%;
-	left: 50%;
+	/*left: 50%;*/
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	text-align: left;
-	margin-left: -480px;
+	/*margin-left: -480px;*/
 }
 .da-slide-current{
 	z-index: 10;
@@ -44,6 +44,19 @@
 }
 .da-slider-fb  .da-slide.da-slide-current{
 	left: 0px;
+}
+
+.slide1{
+    background: transparent url('../img/homepage_bg.jpg') repeat 0% 0%;
+}
+.slide2{
+    background: transparent url('../img/homepage_bg2.jpg') repeat 0% 0%;
+}
+.slide3{
+    background: transparent url('../img/homepage_bg3.jpg') repeat 0% 0%;
+}
+.slide4{
+    background: transparent url('../img/homepage_bg.jpg') repeat 0% 0%;
 }
 .da-slide h2,
 .da-slide p,
@@ -71,20 +84,19 @@
 	white-space: nowrap;
 	z-index: 10;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-	font-family: 'Economica', Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-weight: 700;
 }
 .da-slide p{
-	width: 45%;
 	top: 155px;
-	color: #99cc66;
 	font-size: 18px;
-	line-height: 26px;
+	line-height: 21px;
 	height: 80px;
 	font-style: italic;
 	font-family: 'Economica', Arial, sans-serif;
 	font-weight: 400;
 	font-style: italic;
+    text-align:end;
 }
 .da-slide .da-img{
 	text-align: center;
@@ -127,7 +139,7 @@
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background: #99cc66;
+	background: #f84d1e;
 	margin: 3px;
 	cursor: pointer;
 	box-shadow: 

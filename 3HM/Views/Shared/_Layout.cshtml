@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="background: url('img/body-gradient.png') 0 0 repeat-x;">
 <head>
     <!-- start: Meta -->
     <meta charset="utf-8">
@@ -31,18 +31,18 @@
     <![endif]-->
 </head>
 
-<body >
+<body>
     <!--start: Header -->
-    <header>
+    <header style="height:100px;padding-top:30px;">
 
         <!--start: Container -->
-        <div class="container" style="width:1100px;">
+        <div class="container" style="width:95%;">
 
             <!--start: Row -->
             <div class="row">
 
                 <!--start: Logo -->
-                <div class="logo span3" style="font-size:.9em;font-weight:600;width:190px;margin-left:0px;">
+                <div class="logo span2" style="font-size:.9em;font-weight:600;width:190px;">
                     <a class="brand" href="/Home">
                         <img src="~/img/3HMlogo.png" style="height:66px;margin:0px;" alt="Logo">
                     </a>
@@ -50,12 +50,15 @@
                         Health<br /> Hygine <br />Herbal <br />Management
                     </p>
                 </div>
+                <div style="float:right; margin-top:-15px;color:red!important;margin-right:25px;">
+                    @Html.ActionLink("Business Opportunities", "Business", "Home", new { style = "color:#f00 !important;" })
+                </div>
                 <!--end: Logo -->
                 <!--start: Navigation -->
-                <div class="span9">
+                <div class="span8" style="width:725px;padding-top:30px;">
 
-                    <div class="navbar navbar-inverse">
-                        <div class="navbar-inner">
+                    <div class="navbar navbar-inverse" style="background:transparent;">
+                        <div class="navbar-inner" style="background:transparent;">
                             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -68,7 +71,7 @@
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Services" ? "active":"" )">@Html.ActionLink("Services", "Services", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() =="Products" ? "active":"" )">@Html.ActionLink("Products", "Products", "Home")</li>
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString()=="ClientsPartners" ? "active":"" )">@Html.ActionLink("Clients", "ClientsPartners", "Home")</li>
-                                    <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Business" ? "active" : "")">@Html.ActionLink("Business Opportunities", "Business", "Home")</li>
+                                    @*<li class="@(ViewContext.RouteData.Values["action"].ToString() == "Business" ? "active" : "")">@Html.ActionLink("Business Opportunities", "Business", "Home")</li>*@
                                     <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active" : "") ">@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                                     @*<li class="dropdown">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -98,7 +101,60 @@
 
     </header>
     <!--end: Header-->
+    <!-- start: Slider -->
+    <div class="slider-wrapper" style=" position: absolute; height: 500px; top: 0; width: 100%; left: 0; z-index: -1000;">
+        <div id="da-slider" class="da-slider">
+            <div class="da-slide slide1">
+                <div class="da-img">
+                    <img src="~/img/red-action-bar-responsive.png" alt="image01" style="height:100px;margin-left:-320px;margin-top:300px;" />
+                    <p class="slider-text">
+                        These products (BUGSAC-d9, PYNODOR, OSOLIN-AT) are found to be effective and are being used in our factory premises. They are found to be environment friendly.
+                        <br /><br />
+                        Nagaraj Banaji, DGM, MICO, Bosch
 
+                    </p>
+                </div>
+            </div>
+            <div class="da-slide slide2" >
+                <div class="da-img">
+                    <img src="~/img/red-action-bar-responsive.png" alt="image01" style="height:100px;margin-left:-320px;margin-top:300px;" />
+                    <p class="slider-text">
+                        We procured and used in our works, OSOLIN-AT, an herbal termite control chemical for treatment of our wooden display units which were infested by termites.
+                        <br />
+                        <br />
+                        N. Vijay, Manager Construction & Maintenance,
+                        
+                        Bharat Earth Movers Ltd.
+                    </p>
+                </div>
+            </div>
+            <div class="da-slide slide3">
+                <div class="da-img">
+                    <img src="~/img/red-action-bar-responsive.png" alt="../image01" style="height:100px;margin-left:-320px;margin-top:300px;" />
+                    <p class="slider-text">
+                        The items supplied named, PYNODOR and BUGSAC have been tried in our manufacturing and structural assembly hangers for overcoming the mosquito menace. We are pleased to state that items are very effective.
+                        <br />
+                        R. Varadrajan, GM Design Services, HAL
+                    </p>
+                </div>
+            </div>
+            <div class="da-slide slide4">
+                <div class="da-img">
+                    <img src="~/img/red-action-bar-responsive.png" alt="image01" style="height:100px;margin-left:-320px;margin-top:300px;" />
+                    <p class="slider-text">
+                        Our Horticulture and Hygiene department have been using herbal products/Pesticides BUGSAC-d9, PYNODOR and MEALI-SAC. We have found these products and the vendor to our utmost satisfaction.
+                        <br />
+                        Sunil Babu, Materials Manager, The Leela Palace, Kempinski
+                    </p>
+                </div>
+            </div>
+            <nav class="da-arrows">
+                <span class="da-arrows-prev"></span>
+                <span class="da-arrows-next"></span>
+            </nav>
+        </div>
+
+    </div>
     <div id="wrapper">
         @RenderBody()
     </div>
@@ -120,15 +176,15 @@
                 <div class="span9" style="width:700px;">
 
                     @*<div id="footer-menu-links">
-                        <ul id="footer-nav">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</a></li>
-                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
-                            <li>@Html.ActionLink("Proucts", "Products", "Home")</li>
+                            <ul id="footer-nav">
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</a></li>
+                                <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                                <li>@Html.ActionLink("Proucts", "Products", "Home")</li>
 
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </div>*@
+                                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            </ul>
+                        </div>*@
 
                 </div>
                 <!-- end: Footer Menu Links-->
@@ -159,11 +215,11 @@
             <div class="row">
                 <!-- start: About -->
                 <div class="span6">
-                    <h3>Customer Care: +91 72 77 123456</h3>
+                    <h5>Customer Care: +91 72 77 123456</h5>
                     @{if (ViewContext.RouteData.Values["action"].ToString() == "Services"
                           || ViewContext.RouteData.Values["action"].ToString() == "Products")
-                      {
-                        <p>
+                    {
+                        <p style="padding-top:10px;">
 
                             <img style="height:50px;" src="~/img/ecofrndly.png" />
                             <img style="height:50px;" src="~/img/hrbl.png" />
@@ -186,7 +242,7 @@
                 <div class="span4">
 
                     <!-- start: Follow Us -->
-                    <h3>Follow Us!</h3>
+                    <h5>Follow Us!</h5>
                     <ul class="social-grid">
                         <li>
                             <div class="social-item">
